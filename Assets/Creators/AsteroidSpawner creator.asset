@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e5dcafa259aec478b4c867272ed27d, type: 3}
+  m_Name: AsteroidSpawner creator
+  m_EditorClassIdentifier: 
+  _gameBehaviourPrefab: {fileID: 8837688886175764218, guid: 00d299c91a4ca994fb46590d64c29f16, type: 3}
+  _asteroidSpawnerData:
+    CoolDownTime: 100
+    AsteroidSpawnRadius: 20
+    AsteroidsCountLimit: 200

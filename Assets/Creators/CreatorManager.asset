@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dabe37e95ac529f4fbd58ab60f4d66eb, type: 3}
+  m_Name: CreatorManager
+  m_EditorClassIdentifier: 
+  _bulletCreator: {fileID: 11400000, guid: d8ee082ae3fb28e4aa23b19feafc90d2, type: 2}
+  _playerCreator: {fileID: 11400000, guid: de76f60a00b516a4089f1dba9f190551, type: 2}
+  _asteroidCreator: {fileID: 11400000, guid: 5d4607ccb7553984bb6215b9d391106b, type: 2}
+  _asteroidSpawnerCreator: {fileID: 11400000, guid: eb74413a610991c4a8b0b70473700991, type: 2}
+  _gameBehaviourCreators:
+  - {fileID: 0}

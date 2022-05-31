@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af547d5f93fb52248abcad7cf0c258dd, type: 3}
+  m_Name: Player creator
+  m_EditorClassIdentifier: 
+  _gameBehaviourPrefab: {fileID: 9155054727857848702, guid: 20495b5cc0cacb7419aa5980665ae7ed, type: 3}
+  _playerData:
+    _weaponData: {fileID: 11400000, guid: 64409aa88ccad2143ac8d87d452fd635, type: 2}
+    _speedCurve:
+      _speedCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.48629853
+          value: 15.296765
+          inSlope: 2
+          outSlope: 2
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 0
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    _rotationSpeed: 200
