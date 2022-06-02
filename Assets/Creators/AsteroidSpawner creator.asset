@@ -16,4 +16,4 @@ MonoBehaviour:
   _asteroidSpawnerData:
     CoolDownTime: 100
     AsteroidSpawnRadius: 20
-    AsteroidsCountLimit: 200
+    AsteroidsCountLimit: 0

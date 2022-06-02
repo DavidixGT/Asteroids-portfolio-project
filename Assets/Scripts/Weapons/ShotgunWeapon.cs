@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Asteroids.Weapon;
 using Asteroids.Utilities;
@@ -19,11 +17,12 @@ public class ShotgunWeapon : Weapon
     }
     protected override void OnShot(Vector2 origin, Vector2 direction)
     {
-        float spreadAngle = Mathf.Acos(direction.x / Mathf.Sqrt(direction.x * direction.x + direction.y * direction.y)) / (6.28f / 360f) * (direction.y / Mathf.Abs(direction.y)) - (_spread / 2f) + (_spread / (_bulletsPerShot * 2f));
+        float yDirectionSign = direction.y / Mathf.Abs(direction.y);
+        float spreadAngle = ((360f * Mathf.Clamp(yDirectionSign, 0f, -1f) + (((Mathf.Acos(direction.x / Mathf.Sqrt(direction.x * direction.x + direction.y * direction.y)) / (6.28f / 360f)) * yDirectionSign)))) - (_spread / 2f);
         for (int i = 0; i < _bulletsPerShot; i++)
         {
             direction = new Vector2(Mathf.Cos(spreadAngle * (6.28f / 360f)), Mathf.Sin(spreadAngle * (6.28f / 360f)));
-            spreadAngle = spreadAngle + (_spread / _bulletsPerShot);
+            spreadAngle = spreadAngle + (_spread / (_bulletsPerShot - 1));
             Bullet bullet = _bulletCreator.CreateBullet(origin, direction, _bullet);
             bullet.Attack<Enemy>();
         }
