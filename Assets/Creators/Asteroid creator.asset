@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameBehaviourPrefab: {fileID: 5072919115125294493, guid: d800b32c8d8229d4d98a70bd1bbceeee, type: 3}
   _asteroidData:
-    Position: {x: 14.932213, y: 13.305225}
+    Position: {x: 18.849901, y: 23.338408}
     AsteroidHealth: 9
-    MovemementSpeed: 0.5
-    RotationSpeed: 100
+    MovemementSpeed: 3
+    RotationSpeed: 300

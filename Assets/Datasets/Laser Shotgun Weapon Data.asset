@@ -15,5 +15,5 @@ MonoBehaviour:
   BulletCreator: {fileID: 11400000, guid: d8ee082ae3fb28e4aa23b19feafc90d2, type: 2}
   Bullet: {fileID: 5886697043859808989, guid: 1386fd1940a065049920b8ba3526c56c, type: 3}
   CoolDownTime: 8
-  Spread: 360
-  BulletsPerShot: 20
+  Spread: 180
+  BulletsPerShot: 3

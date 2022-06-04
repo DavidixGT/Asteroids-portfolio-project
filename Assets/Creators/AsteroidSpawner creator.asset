@@ -15,5 +15,5 @@ MonoBehaviour:
   _gameBehaviourPrefab: {fileID: 8837688886175764218, guid: 00d299c91a4ca994fb46590d64c29f16, type: 3}
   _asteroidSpawnerData:
     CoolDownTime: 100
-    AsteroidSpawnRadius: 20
-    AsteroidsCountLimit: 0
+    AsteroidSpawnRadius: 30
+    AsteroidsCountLimit: 200

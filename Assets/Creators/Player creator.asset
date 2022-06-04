@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameBehaviourPrefab: {fileID: 9155054727857848702, guid: 20495b5cc0cacb7419aa5980665ae7ed, type: 3}
   _playerData:
-    _weaponData: {fileID: 11400000, guid: 64409aa88ccad2143ac8d87d452fd635, type: 2}
+    _weaponData: {fileID: 11400000, guid: 296307b48ada982439a40293f1528b93, type: 2}
     _speedCurve:
       _speedCurve:
         serializedVersion: 2

@@ -26,6 +26,7 @@ public class BasicBullet : Bullet
     }
     public override void GameUpdate()
     {
+        if (IsPaused) return;
         base.GameUpdate();
         _rigidbodyMovement.SetMovementDirection(_movementDirection);
         _rigidbodyMovement.Move();

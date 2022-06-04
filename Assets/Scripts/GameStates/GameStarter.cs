@@ -26,12 +26,12 @@ namespace Asteroids
             _scoreControler = new ScoreControler(hUDInstance.ScoreView);
             _creatorManager.CreateAsteroidSpawner().AsteroidDied += _scoreControler.AddPoint;
             Player playerInstance = _creatorManager.CreatePlayer();
-            playerInstance.Destroyed += () => 
+            playerInstance.Dead += (Entity entity) => 
             {
                 gameOverPanelInstance.Initialize(_scoreControler.GetCurrentSessionScore(), _scoreControler.GetHighestScore());
                 gameOverPanelInstance.Show(); 
             };
-            playerInstance.Destroyed += () => { gameBehaviourUpdaterInstance.PauseGameBehaviours(true); };
+            playerInstance.Dead += (Entity entity) => { gameBehaviourUpdaterInstance.PauseGameBehaviours(true); };
         }
         private void OnDisable() => _creatorManager.UnsubscribeToGameBehaviourCreation(_gameBehaviourUpdater.TryToAddGameBehaviour);
         private GameBehaviourUpdater CreateGameBehaviourUpdater()
