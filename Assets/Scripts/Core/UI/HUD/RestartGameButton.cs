@@ -7,7 +7,6 @@ namespace Asteroids.UI.HUD
     {
         protected override void Interact()
         {
-            Debug.Log("what");
             SceneManager.LoadScene("Game", LoadSceneMode.Single);
         }
     }
